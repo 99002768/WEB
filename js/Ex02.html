@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Demo on js</title>
+    </head>
+    <body> 
+        <script>
+            function add(){
+            var a=parseInt(prompt("enter the value integer"));
+            if(isNaN(a)){
+                alert("sorry choose correct value to enter");
+                a=enteragain();
+            }
+            var b=parseInt(prompt("enter the value"));
+           alert("the sum is" +(a+b));
+            }
+    add();
+    function enteragain(){
+        var a=parseInt(prompt("enter the value integer"));
+       
+        if(isNaN(a)){
+                alert("sorry choose correct value to enter");
+                return;
+        }
+        return a;
+    }
+            </script>
+    </body>
+</html>

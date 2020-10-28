@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>  </title>
+
+            <script src="./scripts/mathCalci.js"></script>
+            <script type = "text/javascript">
+                function invokeoperation(){
+                  document.write("hejhkgf");
+                  var firstValue=document.getElementById("num1").value;
+                  var secondValue=document.getElementById("num2").value;
+                  var operation=document.getElementById("optional").value;
+                 var result=perform(firstValue,secondValue,operation);
+                  document.getElementById("resultt").innerText="result"+result;        
+                }
+            </script>
+       
+    </head>
+    <body>
+      <div>
+      <p> enter value 1 <input type="text" id="num1"/></p>
+      <p> enter value 2<input type="text" id="num2"/></p>
+        <select id="optional">
+                <option>add</option>
+                <option>subtract</option>
+                <option>mutliply</option>
+        </select>
+       <button onclick="invokeoperation()"> = </button>      
+      <p id="resultt"></p>
+    </div>
+    </body>
+</html>

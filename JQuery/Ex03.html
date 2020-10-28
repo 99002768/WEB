@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                display: inline-block;
+                width:40%;
+                height: 350px;
+                border: 2px solid navy;
+                margin: 5px;
+            }
+        </style>
+        <script src="lib/jquery.js"></script>
+        <script>
+            function init(){
+                $("a").click(function(){
+                    $(this).parent().fadeOut(2500);
+                })
+            }
+        </script>
+    </head>
+    <body>
+        <p><a href="#"></a></p>
+        <div style="background-color: aquamarine;"><a href="#">Fade</div>
+        <div style="background-color: black;"></div>
+        <div style="background-color: blue;"></div>
+        <div style="background-color: brown;"></div>
+    </body>
+</html>

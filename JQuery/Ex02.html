@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script src="lib/jquery.js"></script>
+<script>
+    $("document").ready(function(){
+        $("button").click(function(){
+            let name=$("input:eq(0)").val();
+            let address=$("input:eq(1)").val();
+            let phone=$("input:eq(2)").val();
+            let bill=$("input:last").val();
+            let display=`The name ${name} from ${address} contactable at ${phone} hs paid the bill of rs.  ${bill}`;
+            $("div:eq(1)>p").text(display);
+        })
+    })
+</script>
+    </head>
+    <body>
+        <div>
+            <h2>Register the Customer</h2>
+            <p> <input type="text" placeholder="Enter the Name"> </p>
+            <p> <input type="text" placeholder="Enter the Address"> </p>
+            <p> <input type="text" placeholder="Enter the Phone"> </p>
+            <p> <input type="text" placeholder="Enter the BillAmount"> </p>
+            <button>Post Details</button>
+            </div>
+            <div>
+                <p>
+
+                </p>
+            </div>
+    </body>
+</html>

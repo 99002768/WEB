@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title> 
+            <script src="./scripts/Classes.js"></script>
+            <script>
+                function create(){
+                    let id=document.getElementById("empId");
+                    let name=document.getElementById("empName");
+                    let add=document.getElementById("empAddress");
+                    let sal=document.getElementById("empSalary");
+                    let empobj=new employee(id,name,add,sal);
+                    let text=empobj.name;
+                    document.getElementById("pDisplay").inerHTML=text
+                }
+            </script>
+    </head>
+    <body>  
+        <div>
+            <h1>Creating Objects using HTML Inputs</h1>
+            <section>
+            <p>Enter the Employee ID: <input type="number" id="empId"> </p>
+            <p>Enter the Employee Name: <input type="text" id="empName"> </p>
+            <p>Enter the Employee Address: <input type="text" id="empAddress"> </p>
+            <p>Enter the Employee Salary: <input type="number" min="10000" max="70000" id="empSalary"></p>
+            <p><button onclick="create()">Register</button></p>
+            </section>
+            </div>
+            <div>
+            <h1>Details of the Employee that are set:</h1>
+            <p id="pDisplay">
+            </p>
+            </div> 
+    </body>  
+</html>
